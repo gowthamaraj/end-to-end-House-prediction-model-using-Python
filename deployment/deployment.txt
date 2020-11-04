@@ -1,0 +1,16 @@
+1) Create an account on Heroku (https://www.heroku.com/
+2) Download Heroku-cli (https://devcenter.heroku.com/articles/heroku-cli)
+3) pip install gunicorn
+
+
+4) Include "Procfile" for providing the configs - [web: gunicorn server:app]
+5) Include requirements.txt (pip freeze > requirements.txt)
+
+6) git init . (rm -rf .git)
+7) git add .
+8) git commit -m "first commit"
+
+9) heroku login
+10) heroku create 
+11) heroku git:remote -a {your-project-name}
+12) git push heroku master
